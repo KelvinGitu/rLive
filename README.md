@@ -1,4 +1,4 @@
-# rugby_app
+# r_app
 
 A new Flutter project.
 
