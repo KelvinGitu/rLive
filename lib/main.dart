@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rugby_app/screens/home_screen.dart';
+import 'package:rugby_app/responsive_layout.dart';
+import 'package:rugby_app/screens/mobile/mobile_home_screen.dart';
+import 'package:rugby_app/screens/web/web_home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const ResponsiveLayout(mobileScreenLayout: MobileHomeScreen(), webScreenLayout: WebHomeScreen()),
     );
   }
 }
